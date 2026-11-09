@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: rozinnov-arch/our-strength_analysis-site
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "team"
+    label: "Команда"
+    folder: "content/team"
+    create: true
+    fields:
+      - {label: "Имя", name: "title", widget: "string"}
+      - {label: "Должность", name: "role", widget: "string"}
+      - {label: "Описание", name: "body", widget: "markdown"}
+      - {label: "Фотография", name: "photo", widget: "image"}
+
+  - name: "projects"
+    label: "Проекты"
+    folder: "content/projects"
+    create: true
+    fields:
+      - {label: "Название проекта", name: "title", widget: "string"}
+      - {label: "Теги (через запятую)", name: "tags", widget: "string"}
+      - {label: "Описание", name: "body", widget: "markdown"}
+      - {label: "Результат", name: "result", widget: "string"}
+      - {label: "Картинка", name: "image", widget: "image"}
