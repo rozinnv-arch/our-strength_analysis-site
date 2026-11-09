@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инженерные расчеты прочности | Команда</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ШАПКА САЙТА -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">STRENGTH LAB <span>(рабочее название)</span></div>
+            <nav>
+                <a href="#about">О нас</a>
+                <a href="#team">Команда</a>
+                <a href="#portfolio">Проекты</a>
+                <a href="#contact" class="btn-nav">Связаться</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero">
+        <div class="container">
+            <h1>Инженерные расчёты <br>и оптимизация конструкций</h1>
+            <p class="subtitle">Команда специалистов по прочности, усталости и композитам. Опыт работы с авиастроением, машиностроением и передовыми CAE-пакетами.</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn-primary">Наши проекты</a>
+                <a href="#contact" class="btn-secondary">Обсудить задачу</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О НАС (КРАТКО) -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2>О нашей экспертизе</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Прочность и ресурс</h3>
+                    <p>Расчеты на статическую прочность, усталость и живучесть металлических и композитных конструкций.</p>
+                </div>
+                <div class="card">
+                    <h3>Оптимизация</h3>
+                    <p>Параметрическая и топологическая оптимизация для снижения веса при сохранении надежности.</p>
+                </div>
+                <div class="card">
+                    <h3>Методологии</h3>
+                    <p>Разработка расчетных методик, моделирование техпроцессов (сварка, инфузия) и обучение.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОМАНДА -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Наша команда</h2>
+            <p class="section-desc">Специалисты с опытом работы в ЦАГИ, МАИ и ведущих инженерных компаниях.</p>
+            
+            <!-- КАРТОЧКА ЛИДЕРА -->
+            <div class="team-grid">
+                <div class="team-card leader">
+                    <div class="photo-placeholder">Фото</div> <!-- Сюда можно вставить фото -->
+                    <h3>Николай Розин</h3>
+                    <p class="role">Руководитель направления</p>
+                    <p class="bio">Опыт в авиастроении более 15 лет. Специалист по усталости, живучести и оптимизации. Автор курса "Abaqus для конструкторов".</p>
+                </div>
+                
+                <!-- ЗАГЛУШКА ДЛЯ СОТРУДНИКА (для демо) -->
+                <div class="team-card">
+                    <div class="photo-placeholder">Фото</div>
+                    <h3>Сотрудник (напр. Иван)</h3>
+                    <p class="role">Инженер-прочнист</p>
+                    <p class="bio">Специализация: расчеты композитных конструкций, моделирование ударных воздействий в Abaqus. (Здесь будет описание вашего коллеги).</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Фото</div>
+                    <h3>Сотрудник (напр. Анна)</h3>
+                    <p class="role">Расчетчик / CAE-инженер</p>
+                    <p class="bio">Специализация: топологическая оптимизация, работа с Femap/Nastran, подготовка КЭ-моделей. (Здесь будет описание вашего коллеги).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОРТФОЛИО (ОБЕЗЛИЧЕННОЕ) -->
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <h2>Примеры работ (Демо)</h2>
+            <p class="section-desc">В реальной версии здесь будут ваши проекты. Названия обезличены в целях демонстрации дизайна.</p>
+            
+            <div class="grid-2">
+                <!-- Кейс 1 -->
+                <div class="project-card">
+                    <div class="project-tags"><span>Abaqus</span><span>Усталость</span></div>
+                    <h3>Оценка долговечности узла шасси</h3>
+                    <p>Разработка метода оценки долговечности на основе КЭ-моделей в контактной постановке при нерегулярном нагружении.</p>
+                    <div class="project-result">Результат: Сокращение времени расчета на 30%.</div>
+                </div>
+                <!-- Кейс 2 -->
+                <div class="project-card">
+                    <div class="project-tags"><span>Композиты</span><span>Моделирование</span></div>
+                    <h3>Моделирование удара в ПКМ</h3>
+                    <p>Разработка методики определения глубины вмятины для нанесения повреждения 1 категории при статических и ресурсных испытаниях.</p>
+                    <div class="project-result">Результат: Внедрение методики в испытательный процесс.</div>
+                </div>
+                <!-- Кейс 3 -->
+                <div class="project-card">
+                    <div class="project-tags"><span>iSight</span><span>Оптимизация</span></div>
+                    <h3>Оптимизация кессона крыла</h3>
+                    <p>Параметрическая оптимизация по критериям прочности, жесткости и потери устойчивости (связка CAD+FEM+iSight+Excel).</p>
+                    <div class="project-result">Результат: Снижение массы конструкции на 12%.</div>
+                </div>
+                <!-- Кейс 4 -->
+                <div class="project-card">
+                    <div class="project-tags"><span>Руководство</span><span>ТВРС-44</span></div>
+                    <h3>Расчёт интерьера при аварийной посадке</h3>
+                    <p>Руководство командой расчетчиков. Анализ прочности интерьера самолета при аварийной посадке (по мотивам реального опыта).</p>
+                    <div class="project-result">Результат: Успешная сдача этапа проекта.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <div>
+                <h2>Готовы обсудить ваш проект</h2>
+                <p>Оставьте заявку, и мы свяжемся с вами для уточнения деталей. <br><i>(В демо-версии форма не отправляет данные, но мы можем это настроить).</i></p>
+                <ul class="contact-list">
+                    <li>📧 Email: your@email.com (заменить)</li>
+                    <li>✈️ Telegram: @your_tg (заменить)</li>
+                </ul>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш Email" required>
+                <textarea placeholder="Опишите вашу задачу" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Strength Lab. Все права защищены. <br> <small>Демонстрационная версия сайта.</small></p>
+        </div>
+    </footer>
+
+</body>
+</html>
